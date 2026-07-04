@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Final Letter</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="particles"></div>
+  <div class="petals">
+    <span>🌸</span>
+    <span>🌸</span>
+    <span>🌸</span>
+    <span>🌸</span>
+    <span>🌸</span>
+    <span>🌸</span>
+    <span>🌸</span>
+    <span>🌸</span>
+</div>
+
+  <audio id="bgMusic" loop>
+    <source src="Reze.mp3" type="audio/mpeg" />
+  </audio>
+
+  <div class="page-shell">
+    <header class="top-controls">
+      <div class="top-controls-inner">
+        <div class="nav-group">
+          <a class="nav-btn" href="page9.html" data-transition="true">Previous</a>
+          <a class="nav-btn" href="page10.html">Next</a>
+        </div>
+        <div class="action-group">
+          <button class="control-btn" id="musicToggle">Mute Music</button>
+          <button class="control-btn" id="volumeDownBtn" title="Decrease Volume">Vol -</button>
+          <button class="control-btn" id="volumeUpBtn" title="Increase Volume">Vol +</button>
+          <button class="control-btn" id="themeToggle">Dark Mode</button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="book-page">
+        <span class="page-tag">Page 10 - Final Letter</span>
+
+        <div class="letter-card">
+          <h2>Final Letter</h2>
+          <div class="accent-line"></div>
+
+          <p class="handwritten">
+            Dear Sir,<br /><br />
+            Thank you for being more than a coding teacher. You have been a guide,
+            a motivator, and a source of confidence in a journey that once felt
+            difficult to begin. Every concept you explained, every mistake you corrected,
+            and every time you encouraged us has left a lasting mark on my learning.<br /><br />
+            Thank you for not just teaching programming, but for helping me believe in myself.
+          </p>
+
+          <div class="signature">
+            With heartfelt gratitude,<br />
+            <strong>Komal Pandya</strong>
+          </div>
+        </div>
+
+        <div class="center-actions">
+          <button class="primary-btn" id="openGiftBtn">Open My Final Gift</button>
+        </div>
+
+        <div class="final-surprise" id="finalSurprise">
+          <div class="falling-flowers" id="fallingFlowers"></div>
+
+          <div class="thankyou-glow">Thank You Sir</div>
+
+          <div class="certificate-card">
+            <div class="cert-badge">★</div>
+            <div class="cert-title">World's Best Mentor</div>
+            <p class="cert-subtitle">
+              Presented with deep respect and gratitude
+            </p>
+            <div class="accent-line" style="margin-left:auto; margin-right:auto;"></div>
+            <p class="quote">
+              "A teacher plants seeds of knowledge that continue to grow forever."
+            </p>
+          </div>
+
+          <p class="final-message">
+            This website is a small token of gratitude for everything you have done.
+            Thank you, Sir.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <div class="footer-note">A tribute written with gratitude and respect.</div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Final Letter</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="final">
+
+  <h1>💌 A Message</h1>
+
+  <p class="letter">
+    Every successful program I write in the future will always remind me of the teacher who helped me write my very first one.
+  </p>
+
+  <button class="terminal-btn" onclick="openTerminal()">
+    A Message
+  </button>
+
+  <pre id="terminal" class="hidden terminal-box"></pre>
+
+  <a href="page11.html" class="next-btn" data-transition="true">next ➝</a>
+
+</div>
+<script>
+function openTerminal() {
+  const term = document.getElementById("terminal");
+  if (!term) return;
+  term.classList.remove("hidden");
+  
+  const text = "System initialization...\nLoading memories...\nFound 1000+ lines of guidance.\nStatus: Infinite Gratitude.\n\nThank you, Nilesh Jadhao Sir, for being the best mentor!";
+  let i = 0;
+  term.textContent = "";
+  
+  function type() {
+    if (i < text.length) {
+      term.textContent += text.charAt(i);
+      i++;
+      setTimeout(type, 30);
+    }
+  }
+  type();
+}
+</script>
